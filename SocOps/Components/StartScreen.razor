@@ -1,30 +1,64 @@
-<div class="flex flex-col items-center justify-center min-h-full p-6" style="background: transparent;">
-    <div class="text-center max-w-sm w-full">
+<div class="landing-root">
 
-        <!-- Logo / Title -->
-        <div class="mb-2">
-            <h1 class="cyber-title" style="font-size: 3rem; line-height: 1;">
-                SOC&nbsp;OPS
-            </h1>
+    <!-- Animated background decoration -->
+    <div class="landing-bg" aria-hidden="true">
+        <div class="landing-orb landing-orb--cyan"></div>
+        <div class="landing-orb landing-orb--magenta"></div>
+        <div class="landing-scan-line"></div>
+    </div>
+
+    <div class="landing-content">
+
+        <!-- Hero -->
+        <div class="landing-hero">
+            <div class="landing-badge">◈ Social Protocol Active ◈</div>
+            <h1 class="cyber-title landing-title">SOC&nbsp;OPS</h1>
+            <p class="cyber-subtitle landing-subtitle">Social&nbsp;Bingo&nbsp;Experience</p>
+            <p class="landing-tagline">Turn every event into a mission.</p>
         </div>
-        <p class="cyber-subtitle mb-8" style="font-size: 0.8rem;">Social &nbsp;Bingo</p>
 
-        <!-- Instructions card -->
-        <div class="cyber-instructions rounded-lg p-6 mb-8">
-            <h2 class="cyber-label mb-3">Mission Briefing</h2>
-            <ul style="list-style: none; margin: 0; padding: 0;" class="space-y-2">
-                <li class="cyber-list-item">Find people who match the squares</li>
-                <li class="cyber-list-item">Tap a square when you find a match</li>
-                <li class="cyber-list-item">Get 5 in a row to win!</li>
-            </ul>
+        <!-- Stats strip -->
+        <div class="landing-stats">
+            <div class="landing-stat">
+                <span class="landing-stat-value">25</span>
+                <span class="landing-stat-label">Squares</span>
+            </div>
+            <div class="landing-stat-divider"></div>
+            <div class="landing-stat">
+                <span class="landing-stat-value">5×5</span>
+                <span class="landing-stat-label">Grid</span>
+            </div>
+            <div class="landing-stat-divider"></div>
+            <div class="landing-stat">
+                <span class="landing-stat-value">5</span>
+                <span class="landing-stat-label">In a Row</span>
+            </div>
+        </div>
+
+        <!-- Numbered mission steps -->
+        <div class="landing-steps">
+            <div class="landing-step">
+                <span class="landing-step-number">01</span>
+                <span class="landing-step-text">Find people who match the squares</span>
+            </div>
+            <div class="landing-step">
+                <span class="landing-step-number">02</span>
+                <span class="landing-step-text">Tap a square when you find a match</span>
+            </div>
+            <div class="landing-step">
+                <span class="landing-step-number">03</span>
+                <span class="landing-step-text">Get 5 in a row to win!</span>
+            </div>
         </div>
 
         <!-- CTA -->
-        <button
-            @onclick="OnStart"
-            class="cyber-btn w-full py-4 px-8 rounded-lg text-lg">
-            Initialize Game
-        </button>
+        <div class="landing-cta">
+            <button @onclick="OnStart" class="cyber-btn landing-cta-btn">
+                ⟩ Initialize Mission ⟨
+            </button>
+            <p class="landing-cta-hint">Ready to deploy, agent?</p>
+        </div>
+
     </div>
 </div>
 
